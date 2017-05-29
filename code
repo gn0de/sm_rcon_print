@@ -1,0 +1,4 @@
+#Prints rcon password when put into a cvar
+char rconPW[128];
+	FindConVar("rcon_password").GetString(rconPW, sizeof(rconPW));
+		PrintToServer("rcon password is: %s", rconPW);
